@@ -1,6 +1,6 @@
 # RdcTechCommunities
 
-Ce projet a pour but de mettre à la dispositions des tout le monde, des informations sur les communauté Technologiques de la Republique democratique du congo (RDC), dees infos commes leur site web, les differents liens de leurs comptes sur les reseaux sociaux ainsi que leurs github pour certains.
+Ce projet a pour but de mettre à la dispositions des tout le monde, des informations sur les communauté Technologiques de la Republique democratique du congo (RDC), des infos commes leur site web, les differents liens de leurs comptes sur les reseaux sociaux ainsi que leurs github pour certains.
 
 ## la Stack du projet
 
