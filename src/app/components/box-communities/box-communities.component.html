@@ -1,0 +1,60 @@
+<main class="flex flex-col items-center mt-5">
+    <div class="flex justify-center">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Search a Community ..." class="border  rounded-l-md p-2 outline-none lg:w-96">
+        <button (click)="search()" class="bg-blue-600 p-2 text-white hover:bg-blue-500 hover:duration-300 rounded-r-md">Search</button>
+    </div>
+    <section class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+       @if (isSearch) {
+            @for (item of filteredObjects; track $index) {
+                <div class="border p-4 w-64 rounded-xl">
+                    <span class="bg-gray-100 border w-8 h-8 p-2 flex justify-center items-center rounded-full"><i class='bx bx-link'></i></span>
+                    <div class="flex items-center mt-4">
+                        <h1 class="uppercase font-semibold"> {{item.community.name }} </h1>
+                        <span class="text-blue-600 ml-1 mt-1"><i class='bx bxs-badge-check'></i></span>
+                    </div>
+                    
+                    <div class="flex mt-4">
+                        @if (item.community.siteweb !== '') {
+                            <a href="{{item.community.siteweb}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300  text-xl text-blue-600"><i class='bx bx-world'></i></a>
+                        }
+                        @if (item.community.linkedin !== ''){
+                            <a href="{{item.community.linkedin}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-linkedin-square'></i></a>
+                        }
+                        @if (item.community.youtube !== ''){
+                            <a href="{{item.community.youtube}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-youtube' ></i></a>
+                        }
+                        @if (item.community.github !== ''){
+                            <a href="{{item.community.github}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-github' ></i></a>
+                        }
+                        
+                        
+                    </div>
+                </div>
+            }
+       } @else {
+            @for (item of communities; track $index) {
+                <div class="border w-64 p-4 rounded-xl">
+                    <span class="bg-gray-100 border w-8 h-8 p-2 flex justify-center items-center rounded-full"><i class='bx bx-link'></i></span>
+                    <div class="flex items-center mt-4">
+                        <h1 class="uppercase font-semibold"> {{item.community.name }} </h1>
+                        <span class="text-blue-600 ml-1 mt-1"><i class='bx bxs-badge-check'></i></span>
+                    </div>
+                    <div class="flex mt-4">
+                        @if (item.community.siteweb !== '') {
+                            <a href="{{item.community.siteweb}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300  text-xl text-blue-600"><i class='bx bx-world'></i></a>
+                        }
+                        @if (item.community.linkedin !== ''){
+                            <a href="{{item.community.linkedin}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-linkedin-square'></i></a>
+                        }
+                        @if (item.community.youtube !== ''){
+                            <a href="{{item.community.youtube}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-youtube' ></i></a>
+                        }
+                        @if (item.community.github !== ''){
+                            <a href="{{item.community.github}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-github' ></i></a>
+                        }
+                    </div>
+                </div>
+            }
+       }
+    </section>
+</main>
