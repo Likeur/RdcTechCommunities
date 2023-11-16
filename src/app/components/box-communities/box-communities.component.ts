@@ -55,6 +55,72 @@ export class BoxCommunitiesComponent {
         github : '',
         siteweb: ''
       }
+    },
+    {
+      id : 5,
+      community : {
+        name: 'GDG Lubum',
+        linkedin: 'jse',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
+    },
+    {
+      id : 6,
+      community : {
+        name: 'GDSC ESIS',
+        linkedin: 'jse',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
+    },
+    {
+      id : 7,
+      community : {
+        name: 'MLSA ESIS',
+        linkedin: 'jse',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
+    },
+    {
+      id : 8,
+      community : {
+        name: 'GDSC UNILU',
+        linkedin: 'jse',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
+    },
+    {
+      id : 9,
+      community : {
+        name: 'GDSC UNH',
+        linkedin: 'jse',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
+    },
+    {
+      id : 10,
+      community : {
+        name: 'GDG KIN',
+        linkedin: 'jse',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
     }
   ]
 
