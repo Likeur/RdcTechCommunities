@@ -15,8 +15,8 @@ export class BoxCommunitiesComponent {
       {
         id : 1,
         community : {
-          name: 'Devcom',
-          linkedin: 'jse',
+          name: 'Devcom Upl',
+          linkedin: 'https://www.linkedin.com/company/devcom-upl/mycompany/',
           whatsapp : '',
           youtube : '',
           github : '',
@@ -27,7 +27,7 @@ export class BoxCommunitiesComponent {
       id : 2,
       community : {
         name: 'Espacesis',
-        linkedin: 'jse',
+        linkedin: 'https://www.linkedin.com/company/espacesis/',
         whatsapp : '',
         youtube : '',
         github : '',
@@ -38,11 +38,11 @@ export class BoxCommunitiesComponent {
       id : 3,
       community : {
         name: 'Devscast',
-        linkedin: 'jse',
+        linkedin: 'https://www.linkedin.com/company/devscast-community/',
         whatsapp : '',
         youtube : '',
         github : '',
-        siteweb: 'https://devscast.org'
+        siteweb: 'https://devscast.tech/'
       }
     },
     {
@@ -60,22 +60,22 @@ export class BoxCommunitiesComponent {
       id : 5,
       community : {
         name: 'GDG Lubum',
-        linkedin: 'jse',
+        linkedin: 'https://www.linkedin.com/company/gdg-lubumbashi',
         whatsapp : '',
         youtube : '',
         github : '',
-        siteweb: ''
+        siteweb: 'https://gdg.community.dev/gdg-lubumbashi/'
       }
     },
     {
       id : 6,
       community : {
         name: 'GDSC ESIS',
-        linkedin: 'jse',
+        linkedin: 'https://www.linkedin.com/company/gdsc-esisalama',
         whatsapp : '',
         youtube : '',
         github : '',
-        siteweb: ''
+        siteweb: 'https://gdsc.community.dev/higher-school-of-computer-science-salama/'
       }
     },
     {
@@ -120,6 +120,50 @@ export class BoxCommunitiesComponent {
         youtube : '',
         github : '',
         siteweb: ''
+      }
+    },
+    {
+      id : 11,
+      community : {
+        name: 'WTM Lubum',
+        linkedin: 'https://www.linkedin.com/company/women-techmakers-lubumbashi/',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
+    },
+    {
+      id : 12,
+      community : {
+        name: 'Math info',
+        linkedin: 'https://www.linkedin.com/company/cercle-scientifique-math-info/',
+        whatsapp : 'https://wa.me/0995555480',
+        youtube : '',
+        github : '',
+        siteweb: ''
+      }
+    },
+    {
+      id : 13,
+      community : {
+        name: 'Soracert',
+        linkedin: 'https://www.linkedin.com/company/soracert-official/',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: 'https://www.soracert.com/'
+      }
+    },
+    {
+      id : 14,
+      community : {
+        name: 'Letecode',
+        linkedin: 'https://www.linkedin.com/company/letecode/',
+        whatsapp : '',
+        youtube : '',
+        github : '',
+        siteweb: 'https://letecode.com/'
       }
     }
   ]

@@ -26,7 +26,9 @@
                         @if (item.community.github !== ''){
                             <a href="{{item.community.github}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-github' ></i></a>
                         }
-                        
+                        @if (item.community.whatsapp !== ''){
+                            <a href="{{item.community.whatsapp}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-whatsapp' ></i></a>
+                        }
                         
                     </div>
                 </div>
@@ -36,7 +38,7 @@
                 <div class="border w-64 p-4 rounded-xl">
                     <span class="bg-gray-100 border w-8 h-8 p-2 flex justify-center items-center rounded-full"><i class='bx bx-link'></i></span>
                     <div class="flex items-center mt-4">
-                        <h1 class="uppercase font-semibold"> {{item.community.name }} </h1>
+                        <h1 class="uppercase font-semibold"> {{item.community.name}} </h1>
                         <span class="text-blue-600 ml-1 mt-1"><i class='bx bxs-badge-check'></i></span>
                     </div>
                     <div class="flex mt-4">
@@ -51,6 +53,9 @@
                         }
                         @if (item.community.github !== ''){
                             <a href="{{item.community.github}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-github' ></i></a>
+                        }
+                        @if (item.community.whatsapp !== ''){
+                            <a href="{{item.community.whatsapp}}" class=" bg-gray-100 border rounded-full h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-whatsapp' ></i></a>
                         }
                     </div>
                 </div>
