@@ -6,7 +6,7 @@
     <section class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
        @if (isSearch) {
             @for (item of filteredObjects; track $index) {
-                <div class="border p-4 w-80 shadow-sm lg:w-64 rounded-xl bg-white dark:bg-gray-900 duration-300">
+                <div class="border p-4 w-[22rem] shadow-sm lg:w-64 rounded-xl bg-white dark:bg-gray-900 duration-300">
                     <span class="bg-gray-100 border w-8 h-8 p-2 flex justify-center items-center rounded-full"><i class='bx bx-link'></i></span>
                     <div class="flex items-center mt-4">
                         <h1 class="uppercase font-semibold dark:text-white"> {{item.community.name }} </h1>
@@ -35,7 +35,7 @@
             }
        } @else {
             @for (item of communities; track $index) {
-                <div class="border w-80 shadow-sm lg:w-64 p-4 rounded-xl bg-white dark:bg-gray-900 duration-300">
+                <div class="border w-[22rem] shadow-sm lg:w-64 p-4 rounded-xl bg-white dark:bg-gray-900 duration-300">
                     <span class="bg-gray-100 border w-8 h-8 p-2 flex justify-center items-center rounded-full"><i class='bx bx-link'></i></span>
                     <div class="flex items-center mt-4">
                         <h1 class="uppercase font-semibold dark:text-white"> {{item.community.name}} </h1>
