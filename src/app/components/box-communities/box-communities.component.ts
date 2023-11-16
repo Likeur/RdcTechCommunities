@@ -17,7 +17,7 @@ export class BoxCommunitiesComponent {
         community : {
           name: 'Devcom Upl',
           linkedin: 'https://www.linkedin.com/company/devcom-upl/mycompany/',
-          whatsapp : '',
+          whatsapp : 'https://chat.whatsapp.com/CdqRmihyMyRHMW7oisiA5T',
           youtube : 'https://www.youtube.com/@DevelopperCommunity_upl',
           github : '',
           siteweb: ''
