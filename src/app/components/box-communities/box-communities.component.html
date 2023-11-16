@@ -32,6 +32,10 @@
                         
                     </div>
                 </div>
+            } @empty {
+                <li class="flex justify-center p-3 w-screen">
+                    <p class="text-gray-500 text-center">Aucune communauté ne correspond à votre recherche</p>
+                </li>
             }
        } @else {
             @for (item of communities; track $index) {
