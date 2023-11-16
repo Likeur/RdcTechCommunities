@@ -18,7 +18,7 @@ export class BoxCommunitiesComponent {
           name: 'Devcom Upl',
           linkedin: 'https://www.linkedin.com/company/devcom-upl/mycompany/',
           whatsapp : '',
-          youtube : '',
+          youtube : 'https://www.youtube.com/@DevelopperCommunity_upl',
           github : '',
           siteweb: ''
         }
@@ -40,7 +40,7 @@ export class BoxCommunitiesComponent {
         name: 'Devscast',
         linkedin: 'https://www.linkedin.com/company/devscast-community/',
         whatsapp : '',
-        youtube : '',
+        youtube : 'https://www.youtube.com/@devscast_org',
         github : '',
         siteweb: 'https://devscast.tech/'
       }
@@ -62,7 +62,7 @@ export class BoxCommunitiesComponent {
         name: 'GDG Lubum',
         linkedin: 'https://www.linkedin.com/company/gdg-lubumbashi',
         whatsapp : '',
-        youtube : '',
+        youtube : 'https://www.youtube.com/@gdglubumbashi',
         github : '',
         siteweb: 'https://gdg.community.dev/gdg-lubumbashi/'
       }
