@@ -1,27 +1,57 @@
 # RdcTechCommunities
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Ce projet a pour but de mettre à la dispositions des tout le monde, des informations sur les communauté Technologiques de la Republique democratique du congo (RDC), dees infos commes leur site web, les differents liens de leurs comptes sur les reseaux sociaux ainsi que leurs github pour certains.
 
-## Development server
+## la Stack du projet
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ - Angular 17 ( angular.dev )
+ - Tailwindcss ( tailwindcss.com )
+ - Boxicons (  boxicons.com)
 
-## Code scaffolding
+Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajouter facilement vous même via un PR ou faite le moi savoir pour que je l'ajoute.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Ajout de la communauté :
 
-## Build
+- Les Etapes : 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    - Forker ce repo en appuyant sur le bouton `fork`
+    - Cloner le repo sur votre machine avec `git clone https://github.com/Likeur/RdcTechCommunities.git`
 
-## Running unit tests
+    - Creer une nouvelle Branche avec `git Branch nom_de_la_branche`
+    - Switcher vers la nouvelle branche avec `git checkout votre_branche` 
+    - Naviguer vers le dossier cloné avec `cd dcTechCommunities`
+    - L'ouvrir avec vs code ou votre éditeur de text preféré
+    - Naviguer vers le dossier `src\app\components\box-communities`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    - puis ouvrez le fichier `box-communities.component.ts`
 
-## Running end-to-end tests
+    Vous y trouverez un tableau d'objet appelé `communities` 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    - dans ce tableau d'objet ajoutez un nouvel objet comme  ceci :
 
-## Further help
+    `
+        ,
+        {
+        id : +1,
+        community : {
+                name: 'nom_de_la_communauté',
+                linkedin: 'lien',
+                whatsapp : 'lien',
+                youtube : 'lien',
+                github : 'lien',
+                siteweb: 'lien'
+            }
+        },
+    `
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    " sur l'id iterez en ajoutant un +1 sur le nombre précedant et ça sera bon " , 
+
+    - Sauvegardez vos modifications avec `git add .`
+    - Faites un commit avec un message de vos modifications avec `git commit -m "votre_message" `
+    - Faites un push vers le repos forker dans votre nouvelle branche avec `git push -u remote_name branch_name`
+    
+    - puis rentrez sur  github pour faire un `PR` (pull request) ensuite je vais `merge`  les modifs après verification.
+
+    Et voilà normalement si vous avez suivis toutes les  etapes votre communauté sera sur la liste.
+
+proudly made by ``Likeur off``
