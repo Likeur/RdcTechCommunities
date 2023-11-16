@@ -30,7 +30,7 @@ export class BoxCommunitiesComponent {
         linkedin: 'https://www.linkedin.com/company/espacesis/',
         whatsapp : '',
         youtube : '',
-        github : '',
+        github : 'https://github.com/espacesis',
         siteweb: ''
       }
     },
@@ -41,19 +41,19 @@ export class BoxCommunitiesComponent {
         linkedin: 'https://www.linkedin.com/company/devscast-community/',
         whatsapp : '',
         youtube : 'https://www.youtube.com/@devscast_org',
-        github : '',
+        github : 'https://github.com/devscast',
         siteweb: 'https://devscast.tech/'
       }
     },
     {
       id : 4,
       community : {
-        name: 'Kotlin Lubum',
-        linkedin: 'jse',
+        name: 'GDSC unikin',
+        linkedin: 'https://www.linkedin.com/company/google-dsc-university-of-kinshasa',
         whatsapp : '',
         youtube : '',
         github : '',
-        siteweb: ''
+        siteweb: 'https://gdsc.community.dev/university-of-kinshasa/#'
       }
     },
     {
@@ -82,7 +82,7 @@ export class BoxCommunitiesComponent {
       id : 7,
       community : {
         name: 'MLSA ESIS',
-        linkedin: 'jse',
+        linkedin: '',
         whatsapp : '',
         youtube : '',
         github : '',
@@ -93,7 +93,7 @@ export class BoxCommunitiesComponent {
       id : 8,
       community : {
         name: 'GDSC UNILU',
-        linkedin: 'jse',
+        linkedin: '',
         whatsapp : '',
         youtube : '',
         github : '',
@@ -104,7 +104,7 @@ export class BoxCommunitiesComponent {
       id : 9,
       community : {
         name: 'GDSC UNH',
-        linkedin: 'jse',
+        linkedin: '',
         whatsapp : '',
         youtube : '',
         github : '',
@@ -115,7 +115,7 @@ export class BoxCommunitiesComponent {
       id : 10,
       community : {
         name: 'GDG KIN',
-        linkedin: 'jse',
+        linkedin: '',
         whatsapp : '',
         youtube : '',
         github : '',
