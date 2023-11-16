@@ -1,15 +1,15 @@
-<nav class="flex justify-between items-center p-3 border-b">
+<nav class="flex justify-between items-center p-3 border-b sticky top-0 bg-white dark:bg-gray-900">
     <div>
-        <a class="flex items-center font-bold text-xl text-gray-800">
+        <a class="flex items-center font-bold lg:text-xl text-gray-800">
             <span><img src="https://cdn-icons-png.flaticon.com/128/202/202843.png" width="20" alt=""></span>
-            <span class="ml-2"><span class="text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text">RDC</span> Tech Communities</span>
+            <span class="ml-2 dark:text-white"><span class="text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text">RDC</span> Tech Communities</span>
         </a>
     </div>
     <ul class="flex items-center ">
-        <li><button class="text-xl bg-gray-100 border h-8 w-8 rounded-full p-2 flex justify-center items-center"><i class='bx bxs-moon' ></i></button></li>
-        <a href="https://github.com/Likeur/RdcTechCommunities" class="flex ml-3 bg-gradient-to-r from-red-600 to-blue-600 text-white rounded-md font-semibold p-2 items-center hover:from-blue-600 hover:to-red-600 duration-300">
+        <li><button (click)="isDarkmode()" id="darkmode" class="text-xl bg-gray-100 border h-8 w-8 rounded-full p-2 flex justify-center items-center duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button></li>
+        <a href="https://github.com/Likeur/RdcTechCommunities" class="flex ml-3 bg-gradient-to-r from-red-600 to-blue-600 text-white rounded-md font-semibold p-1 lg:p-2 items-center hover:from-blue-600 hover:to-red-600 duration-300 text-xs lg:text-lg">
             <span class="relative top-0.5 text-xl"><i class='bx bxl-github' ></i></span>
-            <span class="ml-1">Ajouter une communauté</span>
+            <span class="ml-1">Add community</span>
         </a>
     </ul>
 </nav>
