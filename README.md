@@ -19,7 +19,7 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
 
     - Creer une nouvelle Branche avec `git Branch nom_de_la_branche`
     - Switcher vers la nouvelle branche avec `git checkout votre_branche` 
-    - Naviguer vers le dossier cloné avec `cd dcTechCommunities`
+    - Naviguer vers le dossier cloné avec `cd RdcTechCommunities`
     - L'ouvrir avec vs code ou votre éditeur de text preféré
     - Naviguer vers le dossier `src\app\components\box-communities`
 
@@ -46,6 +46,7 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
 
     " sur l'id iterez en ajoutant un +1 sur le nombre précedant et ça sera bon " , 
 
+    - Enregistrez le fichier avec `ctrl+s`
     - Sauvegardez vos modifications avec `git add .`
     - Faites un commit avec un message de vos modifications avec `git commit -m "votre_message" `
     - Faites un push vers le repos forker dans votre nouvelle branche avec `git push -u remote_name branch_name`
