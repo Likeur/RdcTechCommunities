@@ -43,6 +43,7 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
             }
         },
     `
+    (Si vous ne mettez pas de lien  laisser l'endroit vide comme ceci '')
 
     " sur l'id iterez en ajoutant un +1 sur le nombre précedant et ça sera bon " , 
 
