@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Community, Communities } from '../../model/community';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-box-communities',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './box-communities.component.html',
 })
 export class BoxCommunitiesComponent {
@@ -16,6 +17,7 @@ export class BoxCommunitiesComponent {
         id : 1,
         community : {
           name: 'Devcom Upl',
+          photoProfil: 'https://media.licdn.com/dms/image/D4D0BAQEQDxa7vaE7bg/company-logo_200_200/0/1686124680221/devcom_upl_logo?e=1708560000&v=beta&t=Xx9KVmQ-pnCPtY36TMmPh0s84EK76oUCurrSHXOBPQ8',
           linkedin: 'https://www.linkedin.com/company/devcom-upl/mycompany/',
           whatsapp : 'https://chat.whatsapp.com/CdqRmihyMyRHMW7oisiA5T',
           youtube : 'https://www.youtube.com/@DevelopperCommunity_upl',
@@ -27,6 +29,7 @@ export class BoxCommunitiesComponent {
       id : 2,
       community : {
         name: 'Espacesis',
+        photoProfil: 'https://media.licdn.com/dms/image/C4D0BAQHfRUEuwOXICg/company-logo_100_100/0/1671393306825?e=1708560000&v=beta&t=XSpDFc2Zhw2rqtHcKtqdDkglIV__keTA1UMIXQJ58Hg',
         linkedin: 'https://www.linkedin.com/company/espacesis/',
         whatsapp : '',
         youtube : '',
@@ -38,6 +41,7 @@ export class BoxCommunitiesComponent {
       id : 3,
       community : {
         name: 'Devscast',
+        photoProfil: '',
         linkedin: 'https://www.linkedin.com/company/devscast-community/',
         whatsapp : '',
         youtube : 'https://www.youtube.com/@devscast_org',
@@ -49,6 +53,7 @@ export class BoxCommunitiesComponent {
       id : 4,
       community : {
         name: 'GDSC unikin',
+        photoProfil: '',
         linkedin: 'https://www.linkedin.com/company/google-dsc-university-of-kinshasa',
         whatsapp : '',
         youtube : '',
@@ -60,6 +65,7 @@ export class BoxCommunitiesComponent {
       id : 5,
       community : {
         name: 'GDG Lubum',
+        photoProfil: '',
         linkedin: 'https://www.linkedin.com/company/gdg-lubumbashi',
         whatsapp : '',
         youtube : 'https://www.youtube.com/@gdglubumbashi',
@@ -71,6 +77,7 @@ export class BoxCommunitiesComponent {
       id : 6,
       community : {
         name: 'GDSC ESIS',
+        photoProfil: '',
         linkedin: 'https://www.linkedin.com/company/gdsc-esisalama',
         whatsapp : '',
         youtube : '',
@@ -82,6 +89,7 @@ export class BoxCommunitiesComponent {
       id : 7,
       community : {
         name: 'MLSA ESIS',
+        photoProfil: '',
         linkedin: '',
         whatsapp : '',
         youtube : '',
@@ -93,6 +101,7 @@ export class BoxCommunitiesComponent {
       id : 8,
       community : {
         name: 'GDSC UNILU',
+        photoProfil: '',
         linkedin: '',
         whatsapp : '',
         youtube : '',
@@ -104,6 +113,7 @@ export class BoxCommunitiesComponent {
       id : 9,
       community : {
         name: 'GDSC UNH',
+        photoProfil: '',
         linkedin: '',
         whatsapp : '',
         youtube : '',
@@ -115,6 +125,7 @@ export class BoxCommunitiesComponent {
       id : 10,
       community : {
         name: 'GDG KIN',
+        photoProfil: '',
         linkedin: '',
         whatsapp : '',
         youtube : '',
@@ -126,6 +137,7 @@ export class BoxCommunitiesComponent {
       id : 11,
       community : {
         name: 'WTM Lubum',
+        photoProfil : '',
         linkedin: 'https://www.linkedin.com/company/women-techmakers-lubumbashi/',
         whatsapp : '',
         youtube : '',
@@ -137,6 +149,7 @@ export class BoxCommunitiesComponent {
       id : 12,
       community : {
         name: 'Math info',
+        photoProfil : '',
         linkedin: 'https://www.linkedin.com/company/cercle-scientifique-math-info/',
         whatsapp : 'https://wa.me/0995555480',
         youtube : '',
@@ -148,6 +161,7 @@ export class BoxCommunitiesComponent {
       id : 13,
       community : {
         name: 'Soracert',
+        photoProfil: '',
         linkedin: 'https://www.linkedin.com/company/soracert-official/',
         whatsapp : '',
         youtube : '',
@@ -159,6 +173,7 @@ export class BoxCommunitiesComponent {
       id : 14,
       community : {
         name: 'Letecode',
+        photoProfil: '',
         linkedin: 'https://www.linkedin.com/company/letecode/',
         whatsapp : '',
         youtube : '',
@@ -170,6 +185,7 @@ export class BoxCommunitiesComponent {
       id : 15,
       community : {
         name: '.NET Community DRC',
+        photoProfil: '',
         linkedin: 'https://www.linkedin.com/groups/9543571/',
         whatsapp : 'https://chat.whatsapp.com/KF3wrKscZRK9rDYJpPAcOB',
         youtube : '',
@@ -188,5 +204,8 @@ export class BoxCommunitiesComponent {
     this.filteredObjects = this.communities.filter ( obj => obj.community.name.toLocaleLowerCase().includes(this.searchTerm.toLocaleLowerCase()))
   }
     
+  goToDetails(){
+
+  }
       
 }
