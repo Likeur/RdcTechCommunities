@@ -165,6 +165,17 @@ export class BoxCommunitiesComponent {
         github : '',
         siteweb: 'https://letecode.com/'
       }
+    },
+    {
+      id : 15,
+      community : {
+        name: '.NET Community DRC',
+        linkedin: 'https://www.linkedin.com/groups/9543571/',
+        whatsapp : 'https://chat.whatsapp.com/KF3wrKscZRK9rDYJpPAcOB',
+        youtube : '',
+        github : 'https://github.com/Dotnet-Community-DRC',
+        siteweb: ''
+      }
     }
   ]
 
