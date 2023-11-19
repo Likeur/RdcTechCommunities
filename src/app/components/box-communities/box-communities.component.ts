@@ -41,7 +41,7 @@ export class BoxCommunitiesComponent {
       id : 3,
       community : {
         name: 'Devscast',
-        photoProfil: '',
+        photoProfil: 'https://media.licdn.com/dms/image/D4D0BAQFu9dPhgkClzw/company-logo_100_100/0/1691793553676/devscast_community_logo?e=1708560000&v=beta&t=mSidNNsuNSWVwHXqFXGixljX92fMCLMiNPzMfHC8qrw',
         linkedin: 'https://www.linkedin.com/company/devscast-community/',
         whatsapp : '',
         youtube : 'https://www.youtube.com/@devscast_org',
@@ -53,7 +53,7 @@ export class BoxCommunitiesComponent {
       id : 4,
       community : {
         name: 'GDSC unikin',
-        photoProfil: '',
+        photoProfil: 'https://media.licdn.com/dms/image/D4E0BAQGsz01EcE2wOw/company-logo_200_200/0/1694358541725?e=1708560000&v=beta&t=-DLRunSEp-yuS43I5TItHfz8cT1Vnixt2jX51Rdk1OQ',
         linkedin: 'https://www.linkedin.com/company/google-dsc-university-of-kinshasa',
         whatsapp : '',
         youtube : '',
@@ -65,7 +65,7 @@ export class BoxCommunitiesComponent {
       id : 5,
       community : {
         name: 'GDG Lubum',
-        photoProfil: '',
+        photoProfil: 'https://media.licdn.com/dms/image/D4D0BAQG36N3DsZsnfA/company-logo_100_100/0/1689950819652?e=1708560000&v=beta&t=6Ni67Xax3EtgWyTinqQn6syxFnAX-bKA6B1VgMC5s8k',
         linkedin: 'https://www.linkedin.com/company/gdg-lubumbashi',
         whatsapp : '',
         youtube : 'https://www.youtube.com/@gdglubumbashi',
@@ -77,7 +77,7 @@ export class BoxCommunitiesComponent {
       id : 6,
       community : {
         name: 'GDSC ESIS',
-        photoProfil: '',
+        photoProfil: 'https://media.licdn.com/dms/image/C4D0BAQFT3YWNHFwL2w/company-logo_100_100/0/1671046420564?e=1708560000&v=beta&t=wRMk-YjpgsqWc63nBMAKeiaxzcIAC2jdMQuweZIyzJE',
         linkedin: 'https://www.linkedin.com/company/gdsc-esisalama',
         whatsapp : '',
         youtube : '',
@@ -125,8 +125,8 @@ export class BoxCommunitiesComponent {
       id : 10,
       community : {
         name: 'GDG KIN',
-        photoProfil: '',
-        linkedin: '',
+        photoProfil: 'https://media.licdn.com/dms/image/C5603AQEYtoCD_eTQZw/profile-displayphoto-shrink_100_100/0/1614187418976?e=1705536000&v=beta&t=16pkXPL9EZ8mnzahd-s-doKmMxOmLn5Hf9XoUPuO2S4',
+        linkedin: 'https://www.linkedin.com/in/gdg-kinshasa-087b66207/',
         whatsapp : '',
         youtube : '',
         github : '',
@@ -137,7 +137,7 @@ export class BoxCommunitiesComponent {
       id : 11,
       community : {
         name: 'WTM Lubum',
-        photoProfil : '',
+        photoProfil : 'https://media.licdn.com/dms/image/D4D0BAQFA99N50Q2UmA/company-logo_200_200/0/1691056178832?e=1708560000&v=beta&t=60BwheC__irbYUJNz1ykPspCK_rodFl7jrTAoyIEnXE',
         linkedin: 'https://www.linkedin.com/company/women-techmakers-lubumbashi/',
         whatsapp : '',
         youtube : '',
@@ -149,7 +149,7 @@ export class BoxCommunitiesComponent {
       id : 12,
       community : {
         name: 'Math info',
-        photoProfil : '',
+        photoProfil : 'https://media.licdn.com/dms/image/C4D0BAQEwdzuXWGe55A/company-logo_200_200/0/1656015392633/cercle_scientifique_math_info_logo?e=1708560000&v=beta&t=UUKf_h5Xrhx0k71Wiva2tmkDyPXJ3hOsgHUrM4_kZoc',
         linkedin: 'https://www.linkedin.com/company/cercle-scientifique-math-info/',
         whatsapp : 'https://wa.me/0995555480',
         youtube : '',
@@ -161,7 +161,7 @@ export class BoxCommunitiesComponent {
       id : 13,
       community : {
         name: 'Soracert',
-        photoProfil: '',
+        photoProfil: 'https://media.licdn.com/dms/image/D4E0BAQEY59ibednhFg/company-logo_200_200/0/1687510219277/soracert_official_logo?e=1708560000&v=beta&t=rmW5BVEFCl9uG6C_-rFGSPigQ7EyqiEVERoaNoVFFBs',
         linkedin: 'https://www.linkedin.com/company/soracert-official/',
         whatsapp : '',
         youtube : '',
@@ -173,7 +173,7 @@ export class BoxCommunitiesComponent {
       id : 14,
       community : {
         name: 'Letecode',
-        photoProfil: '',
+        photoProfil: 'https://media.licdn.com/dms/image/C4D0BAQGFzku3TkgFcQ/company-logo_100_100/0/1670450433887/letecode_logo?e=1708560000&v=beta&t=PKxvu6sBB4rScz5hZXdM_oDijpqdmnhWAXJVzcHYvD0',
         linkedin: 'https://www.linkedin.com/company/letecode/',
         whatsapp : '',
         youtube : '',
@@ -185,7 +185,7 @@ export class BoxCommunitiesComponent {
       id : 15,
       community : {
         name: '.NET Community DRC',
-        photoProfil: '',
+        photoProfil: 'https://media.licdn.com/dms/image/D4D07AQHr5Jx1UvTsgQ/group-logo_image-shrink_92x92/0/1700296486169?e=1700956800&v=beta&t=xET2gq2CfyQdhbl5HklOzQEY8k-_QkhiksfLsxnHerU',
         linkedin: 'https://www.linkedin.com/groups/9543571/',
         whatsapp : 'https://chat.whatsapp.com/KF3wrKscZRK9rDYJpPAcOB',
         youtube : '',

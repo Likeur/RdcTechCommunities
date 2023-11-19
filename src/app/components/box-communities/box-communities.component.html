@@ -7,8 +7,13 @@
        @if (isSearch) {
             @for (item of filteredObjects; track $index) {
                 <div (click)="goToDetails()" class="border cursor-pointer p-4 w-[22rem] shadow-sm lg:w-64 rounded-xl bg-white dark:bg-gray-900 duration-300">
-                    <span class="border h-12 w-12 overflow-hidden p-2 flex justify-center object-cover items-center rounded-full">
-                        <img [src]="item.community.photoProfil" class="rounded-full" alt="photo de profil de la communauté">
+                    <span class="border h-12 w-12 overflow-hidden flex justify-center object-cover items-center rounded-full">
+                        @if (item.community.photoProfil !== '') {
+                            <img [src]="item.community.photoProfil" class="rounded-full w-full h-full" alt="">
+                        } @else {
+                            <i class='bx bx-link dark:text-white'></i>
+                        }
+                       
                     </span>
                     <div class="flex items-center mt-4">
                         <h1 class="uppercase font-semibold dark:text-white"> {{item.community.name }} </h1>
@@ -43,8 +48,13 @@
             @for (item of communities; track $index) {
                 
                 <div (click)="goToDetails()" class="border cursor-pointer w-[22rem] shadow-sm lg:w-64 p-4 rounded-xl bg-white dark:bg-gray-900 duration-300">
-                    <span class="border h-12 w-12 overflow-hidden p-2 flex justify-center object-cover items-center rounded-full">
-                        <img [src]="item.community.photoProfil" class="rounded-full" alt="photo de profil de la communauté">
+                    <span class="border h-12 w-12 overflow-hidden flex justify-center object-cover items-center rounded-full">
+                        @if (item.community.photoProfil !== '') {
+                            <img [src]="item.community.photoProfil" class="rounded-full w-full h-full" alt="">
+                        } @else {
+                            <i class='bx bx-link dark:text-white'></i>
+                        }
+                       
                     </span>
                     <div class="flex items-center mt-4">
                         <h1 class="uppercase font-semibold dark:text-white"> {{item.community.name}} </h1>
