@@ -35,6 +35,7 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
         id : +1,
         community : {
                 name: 'nom_de_la_communauté',
+                photoProfil: 'lien de la photo de profil',
                 linkedin: 'lien',
                 whatsapp : 'lien',
                 youtube : 'lien',
@@ -44,6 +45,8 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
         },
     `
     (Si vous ne mettez pas de lien  laisser l'endroit vide comme ceci `''`)
+    
+    *Pour la photo de profil copiez l'adresse de l'image de votre profil linkedin ou bien stocker la photo dans le cloud et copier coller le lien de l'image et mettez le sur la partie photo* 
 
     " sur l'id iterez en ajoutant un +1 sur le nombre précedant et ça sera bon " , 
 

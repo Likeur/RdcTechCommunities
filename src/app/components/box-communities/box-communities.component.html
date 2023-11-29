@@ -45,7 +45,7 @@
                 </span>
             }
        } @else {
-            @for (item of communities; track $index) {
+            @for (item of communities_object; track $index) {
                 
                 <div (click)="goToDetails()" class="border cursor-pointer w-[22rem] shadow-sm lg:w-64 p-4 rounded-xl bg-white dark:bg-gray-900 duration-300">
                     <span class="border h-12 w-12 overflow-hidden flex justify-center object-cover items-center rounded-full">
@@ -81,4 +81,5 @@
             }
        }
     </section>
+ 
 </main>
