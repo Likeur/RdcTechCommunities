@@ -1,7 +1,12 @@
 <main class="flex flex-col items-center mt-5">
-    <div class="flex justify-center p-2">
-        <input type="text" [(ngModel)]="searchTerm" placeholder="Search a Community ..." class="border  rounded-md p-2 outline-none w-72  dark:text-white dark:bg-gray-900 lg:w-96">
-        <button (click)="search()" class="bg-blue-600 p-2 text-white hover:bg-blue-500 hover:duration-300 ml-2 rounded-md">Search</button>
+    <div class="flex items-center">
+        <div class="flex justify-center p-2">
+            <input type="text" [(ngModel)]="searchTerm" placeholder="Search a Community ..." class="border  rounded-md p-2 outline-none w-72  dark:text-white dark:bg-gray-900 lg:w-96">
+            <button (click)="search()" class="bg-blue-600 p-2 text-white hover:bg-blue-500 hover:duration-300 ml-2 rounded-md">Search</button>
+        </div>
+        <div>
+            <span class="bg-blue-100 text-blue-600 shadow-sm border p-2 flex justify-center items-center h-10 w-10 rounded-full"> {{communities_object.length}} </span>
+        </div>
     </div>
     <section class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
        @if (isSearch) {
