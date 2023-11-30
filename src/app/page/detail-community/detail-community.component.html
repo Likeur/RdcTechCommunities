@@ -14,11 +14,29 @@
                             <p class="text-sm text-gray-500"> {{community.community.ville}} </p>
                         </div>
                     </div>
-                    <div>
-            
+                    <div class="mt-5">
+                        <p>
+                            {{community.community.description}}
+                        </p>
                     </div>
                     <div>
-            
+                        <div class="flex mt-4">
+                            @if (community.community.siteweb !== '') {
+                                <a href="{{community.community.siteweb}}" class=" bg-gray-100 border rounded-full shadow-sm h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300  text-xl text-blue-600"><i class='bx bx-world'></i></a>
+                            }
+                            @if (community.community.linkedin !== ''){
+                                <a href="{{community.community.linkedin}}" class=" bg-gray-100 border rounded-full shadow-sm h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-linkedin-square'></i></a>
+                            }
+                            @if (community.community.youtube !== ''){
+                                <a href="{{community.community.youtube}}" class=" bg-gray-100 border rounded-full shadow-sm h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-youtube' ></i></a>
+                            }
+                            @if (community.community.github !== ''){
+                                <a href="{{community.community.github}}" class=" bg-gray-100 border rounded-full shadow-sm h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-github' ></i></a>
+                            }
+                            @if (community.community.whatsapp !== ''){
+                                <a href="{{community.community.whatsapp}}" class=" bg-gray-100 border rounded-full shadow-sm h-10 w-10 flex justify-center items-center hover:bg-blue-600 hover:text-white hover:duration-300 ml-2 text-xl text-blue-600"><i class='bx bxl-whatsapp' ></i></a>
+                            }
+                        </div>
                     </div>
                 </section>
             }

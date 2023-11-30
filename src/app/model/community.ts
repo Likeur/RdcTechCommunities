@@ -6,6 +6,7 @@ export interface Community {
     id: number,
     name : string;
     ville: string;
+    description: string;
     photoProfil : string;
     linkedin : string;
     whatsapp : string;
