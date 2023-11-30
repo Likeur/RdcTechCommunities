@@ -7,6 +7,11 @@ export const routes: Routes = [
         loadComponent : () => import ('./page/home-page/home-page.component')
     },
     {
+        path: 'detailcommunity/:id',
+        title: 'Detail community',
+        loadComponent : () => import ('./page/detail-community/detail-community.component')
+    },
+    {
         path: '',
         redirectTo : 'homepage',
         pathMatch : 'full'

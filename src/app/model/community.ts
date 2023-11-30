@@ -3,7 +3,9 @@ export interface Communities {
     community : Community 
 }
 export interface Community {
+    id: number,
     name : string;
+    ville: string;
     photoProfil : string;
     linkedin : string;
     whatsapp : string;

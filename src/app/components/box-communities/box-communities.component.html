@@ -5,13 +5,13 @@
             <button (click)="search()" class="bg-blue-600 p-2 text-white hover:bg-blue-500 hover:duration-300 ml-2 rounded-md">Search</button>
         </div>
         <div>
-            <span class="bg-blue-100 text-blue-600 shadow-sm border p-2 flex justify-center items-center h-10 w-10 rounded-full"> {{communities_object.length}} </span>
+            <span class="bg-blue-100 text-blue-600 shadow-sm border p-2 flex justify-center items-center h-10 w-10 rounded-full font-semibold"> {{communities_object.length}} </span>
         </div>
     </div>
     <section class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
        @if (isSearch) {
-            @for (item of filteredObjects; track $index) {
-                <div (click)="goToDetails()" class="border cursor-pointer p-4 w-[22rem] shadow-sm lg:w-64 rounded-xl bg-white dark:bg-gray-900 duration-300">
+            @for (item of filteredObjects; track item.id) {
+                <div class="border cursor-pointer p-4 w-[22rem] shadow-sm lg:w-64 rounded-xl bg-white dark:bg-gray-900 duration-300">
                     <span class="border h-12 w-12 overflow-hidden flex justify-center object-cover items-center rounded-full">
                         @if (item.community.photoProfil !== '') {
                             <img [src]="item.community.photoProfil" class="rounded-full w-full h-full" alt="">
@@ -50,9 +50,9 @@
                 </span>
             }
        } @else {
-            @for (item of communities_object; track $index) {
+            @for (item of communities_object; track item.id) {
                 
-                <div (click)="goToDetails()" class="border cursor-pointer w-[22rem] shadow-sm lg:w-64 p-4 rounded-xl bg-white dark:bg-gray-900 duration-300">
+                <div (click)="goToDetails(item.community)" class="border cursor-pointer w-[22rem] shadow-sm lg:w-64 p-4 rounded-xl bg-white dark:bg-gray-900 duration-300">
                     <span class="border h-12 w-12 overflow-hidden flex justify-center object-cover items-center rounded-full">
                         @if (item.community.photoProfil !== '') {
                             <img [src]="item.community.photoProfil" class="rounded-full w-full h-full" alt="">

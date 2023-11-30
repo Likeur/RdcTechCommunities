@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Community, Communities } from '../../model/community';
+import { Communities, Community } from '../../model/community';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { CommunityDataService } from '../../services/community-data.service';
 
 @Component({
@@ -196,6 +196,7 @@ export class BoxCommunitiesComponent {
   //   }
   // ]
 
+  private router = inject(Router)
   
   public communities_object = inject(CommunityDataService).communities ; //injection  de dependances
 
@@ -208,8 +209,8 @@ export class BoxCommunitiesComponent {
     this.filteredObjects = this.communities_object.filter ( obj => obj.community.name.toLocaleLowerCase().includes(this.searchTerm.toLocaleLowerCase()))
   }
     
-  goToDetails(){
-
+  goToDetails(community : Community){
+    this.router.navigate(['/detailcommunity', community.id])
   }
       
 }

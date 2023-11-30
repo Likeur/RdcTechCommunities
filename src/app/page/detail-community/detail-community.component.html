@@ -1,1 +1,31 @@
-<p>detail-community works!</p>
+<main>
+    <app-navbar />
+    <section class="flex justify-center">
+        <div class="mt-4 lg:w-[60vw] lg:border bg-white shadow-sm">
+            <p class="text-center bg-blue-100 text-blue-600 w-full p-2">Informations sur la communauté</p>
+            @if(community){
+                <section class="p-4 lg:p-8">
+                    <div>
+                        <div class="w-20 border rounded-full shadow-sm h-20">
+                            <img [src]="community.community.photoProfil" class="rounded-full w-full h-full" alt="">
+                        </div>
+                        <div class="mt-4">
+                            <h2 class="font-semibold text-lg"> {{community.community.name}} </h2>
+                            <p class="text-sm text-gray-500"> {{community.community.ville}} </p>
+                        </div>
+                    </div>
+                    <div>
+            
+                    </div>
+                    <div>
+            
+                    </div>
+                </section>
+            }
+
+            <div class="p-4 lg:p-8">
+                <a (click)="goBack()" class="block cursor-pointer text-blue-600">Retour</a>
+            </div>
+        </div>
+    </section>
+</main>
