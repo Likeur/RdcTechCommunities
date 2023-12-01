@@ -16,37 +16,39 @@ Si votre communauté n'est pas dans le repo vous avez la possibilité de l'ajout
 
     - Forker ce repo en appuyant sur le bouton `fork`
     - Cloner le repo sur votre machine avec `git clone https://github.com/Likeur/RdcTechCommunities.git`
-
+    - Naviguer vers le dossier cloné avec `cd RdcTechCommunities`
+    - Installer les dependances avec `npm i`
     - Creer une nouvelle Branche avec `git Branch nom_de_la_branche`
     - Switcher vers la nouvelle branche avec `git checkout votre_branche` 
-    - Naviguer vers le dossier cloné avec `cd RdcTechCommunities`
     - L'ouvrir avec vs code ou votre éditeur de text preféré
-    - Naviguer vers le dossier `src\app\components\box-communities`
-
-    - puis ouvrez le fichier `box-communities.component.ts`
+    - Naviguer vers le dossier `src/app/services/`
+    - puis ouvrez le fichier `community-data.service.ts`
 
     Vous y trouverez un tableau d'objet appelé `communities` 
 
-    - dans ce tableau d'objet ajoutez un nouvel objet comme  ceci :
+    - dans ce tableau d'objet ajoutez un nouvel objet comme  ceci et remplissez le :
 
     `
         ,
         {
-        id : +1,
-        community : {
-                name: 'nom_de_la_communauté',
-                photoProfil: 'lien de la photo de profil',
-                linkedin: 'lien',
-                whatsapp : 'lien',
-                youtube : 'lien',
-                github : 'lien',
-                siteweb: 'lien'
-            }
-        },
+      id : +1,
+      community : {
+        id: +1,
+        name: 'nom_communauté',
+        ville: 'ville',
+        description:'decrivez votre communauté',
+        photoProfil: 'lien vers votre photo de profil',
+        linkedin: 'lien de linkedin',
+        whatsapp : 'lien de whatsapp',
+        youtube : 'lien de youtube',
+        github : 'lien du github',
+        siteweb: 'lien du website'
+      }
+  },
     `
     (Si vous ne mettez pas de lien  laisser l'endroit vide comme ceci `''`)
     
-    *Pour la photo de profil copiez l'adresse de l'image de votre profil linkedin ou bien stocker la photo dans le cloud et copier coller le lien de l'image et mettez le sur la partie photo* 
+    *Pour la photo de profil copiez l'adresse de l'image de votre profil linkedin ou le profil d'un de vos reseaux* 
 
     " sur l'id iterez en ajoutant un +1 sur le nombre précedant et ça sera bon " , 
 

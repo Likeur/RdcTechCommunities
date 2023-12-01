@@ -2,7 +2,12 @@
     <app-navbar />
     <section class="flex justify-center">
         <div class="mt-4 w-[90vw] lg:w-[60vw] lg:border bg-white lg:shadow-sm">
-            <p class="text-center bg-blue-100 text-blue-600 w-full p-2">Informations sur la communauté</p>
+
+            <div class="p-4 bg-blue-50 w-full flex justify-between items-center">
+                <a (click)="goBack()" class="block cursor-pointer text-blue-600">Retour</a>
+                <p class="text-gray-500">Informations sur la communauté</p>
+            </div>
+            
             @if(community){
                 <section class="p-4 lg:p-8">
                     <div>
@@ -41,9 +46,7 @@
                 </section>
             }
 
-            <div class="p-4 lg:p-8">
-                <a (click)="goBack()" class="block cursor-pointer text-blue-600">Retour</a>
-            </div>
+           
         </div>
     </section>
 </main>
